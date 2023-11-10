@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#121212, #212b46);
+    background: linear-gradient(#2F4F4F, #708090);
 }
 
 .title{
@@ -27,7 +27,7 @@
     margin: 34px 0;
     display: flex;
     border-radius:  8px;
-    box-shadow: 1px 3px 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 3px 8px rgba(14, 13, 13, 0.5);
 }
 
 .containerInput input{
@@ -90,4 +90,14 @@
         width: 80%;
         min-height: 250px;
     }
+}
+
+.teste{
+    color: blue;
+    text-align: center;
+}
+
+.teste2{
+    color: rgb(0, 0, 0);
+    text-align: center;
 }

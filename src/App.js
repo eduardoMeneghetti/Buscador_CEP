@@ -2,6 +2,8 @@ import { useState } from 'react';
 import './style.css';
 import {FiSearch} from 'react-icons/fi';
 import api from './services/api';
+
+
 function App() {
 
   const [input,setInput] = useState('')
@@ -26,7 +28,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="title">Buscador de CEP</h1>
+      <h1 className="title">Procura CEP</h1>
 
     <div className="containerInput">
       <input
@@ -42,11 +44,11 @@ function App() {
 
     {Object.keys(cep).length > 0 && (
       <main className='main'>
-      <h3>CEP: {cep.cep}</h3>
-      <h3>Logradouro: {cep.logradouro}</h3>
-      <span>Complemento: {cep.complemento}</span>
-      <span>Bairro: {cep.bairro}</span>
-      <span>{cep.localidade} - {cep.uf}</span>
+      <span><p className='teste'>CEP</p><h4 className='teste2'>{cep.cep}</h4></span>
+      <span><p className='teste'>Logradouro</p><h4 className='teste2'>{cep.logradouro}</h4></span>
+      <span><p className='teste'>Complemento</p><h4 className='teste2'>{cep.complemento}</h4></span>
+      <span><p className='teste'>Bairro</p><h4 className='teste2'>{cep.bairro}</h4></span>
+      <span><p className='teste'>Cidade/Estado</p><h4 className='teste2'>{cep.localidade} - {cep.uf}</h4></span>
     </main>
     )}
     
